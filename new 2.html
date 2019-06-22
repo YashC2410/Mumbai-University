@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+function s()
+{
+var x=document.forms["Form"]["name1"].value;
+if(x=="")
+{
+alert("Please Enter UserName");
+return false;
+}
+var y=document.forms["Form"]["pass"].value;
+if(y=="")
+{
+alert("Please Enter Password");
+return false;
+}
+if(x!='Yash' && x!='YASH' && x!='AAKASH' && x!='Aakash' && x!='VIVEK' &&  x!='Vivek')
+{
+alert("No such Username Exist");
+return false;
+}
+if(y1!='pass123')
+{
+alert("Incorrect Password");
+return false;
+}
+}
+</script>
+<STYLE>
+  body{
+  padding:0px;
+  margin:0px auto;
+  margin-top:px;
+  width:500px;
+  height:100px;
+  background-image:linear-gradient(to right,yellow,red);	
+ 
+  }
+  h1{
+  text-align:center;
+  color:red;
+  background-color:#00FFFF;
+  border:2px SOLID black;
+  }
+  .i{
+  background-position:center;
+  margin-top:10px;
+  border:20px;
+  
+   }
+ 
+</STYLE>
+</head>
+<body>
+<h2 style="background-image:linear-gradient(to right,wheat,red);height:40px;border:2px solid black;BORDER-RADIUS:20PX;PADDING-TOP:10PX"><center>WELCOME TO LOGIN PAGE</center></h2>
+<form name="Form" action="staff1.html" method="post" onsubmit="return s()">
+
+<fieldset style="border-radius:50px ;border:2px solid blue;">
+
+<center><h1 style="border-radius:10px;">Login</h1></center>
+<div class="i"><center><img src="icon.png"></center></div>
+
+<center><div class="user"><h3>USERNAME</h3><div class="a"></div><input style="border-radius:10px ;height:30px;border-bottom:2px solid red" type="text" name="name1" placeholder="Username"><br></div>
+<div class="pass"><h3>PASSWORD</h3><input  style="border-radius:10px ;height:30px;border-bottom:2px solid red" type="password"name="pass"placeholder="Password"><br><br></div>
+<button style="border-radius:10px ;height:30px;border-bottom:2px solid red">Submit</button></center>
+</fieldset>
+</form>

@@ -1,0 +1,102 @@
+<!DOCTYPE htmL>
+<html>
+<head>
+<style>
+body {background-image:url("ul.jpg");background-repeat:no-repeat;background-position:center;background-size:200px 200px;}
+</style>
+<script>
+function c()
+{
+var x=document.forms["Form"]["name"].value;
+if(x=="")
+{
+alert("Please Enter Name");
+return false;
+}
+if(x>'a' && x<'z')
+{
+alert("Please Enter Name in Capital");
+return false;
+}
+var s=document.forms["Form"]["sname"].value;
+if(s=="")
+{
+alert("Please Enter Surname");
+return false;
+}
+if(s>'a' && s<'z')
+{
+alert("Please Enter Name in Capital");
+return false;
+}
+var y=document.forms["Form"]["option"].value;
+if(y=="-1")
+{
+alert("Please Enter valid Option");
+return false;
+}
+var z=document.forms["Form"]["Fname"].value;
+if(z=="")
+{
+alert("Please Enter Name in Marathi");
+return false;
+}
+if(z>'A' && z<'Z')
+{
+alert("Please Enter Name in Marathi");
+return false;
+}
+var u=document.forms["Form"]["number"].value;
+if(u=="")
+{
+alert("Please Enter Center Number");
+return false;
+}
+if(u<100)
+{
+alert("Please Enter Valid Center Number");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<marquee><a href="index.html"><img src="1.jpg" width="20%"/></a></marquee>
+<h1 style="background-color:orange;padding:20px;margin-top:0px;"><center>WELCOME TO STUDENT RECORD</center></h1>
+<br/>
+<br/>
+<form name="Form" action="my1.php" method="post" onsubmit="return c()">
+<table>
+<tr>
+<td>
+Student Name :</td><td><input type="text" name="name" placeholder="StudentName" style="border-radius:10px;"/>(In Capital)</td></tr>
+<tr><td>Surname (Only):</td><td><input type="name" name="sname" placeholder="Surname" style="border-radius:10px;"/>(In Capital)</td></tr>
+<tr>
+<td>
+College Name :</td><td> <select name="option"><option value="-1">Please Select your College</option><option>Shree L.R Tiwari  College Of Engineering</option>
+                                     <option>K.J SOMAIYA COLLEGE</option>
+									 <option>D.J SANGHAVI COLLEGE</option>
+									 <option>ST FRANCISS COLLEGE</option>
+									 </td></tr>
+<tr>
+<td>
+First Name :</td><td> <input type="text" name="Fname" placeholder="FirstName" style="border-radius:10px;"/> (in Marathi)</td></tr>
+<tr>
+<td colspan="2">
+<p style="color:red;opacity:.8;"><b>NOTE: Your First Name in Devanagari Script (Surname FirstName MiddleName MotherName). <br/>
+Please type your name using English keyboard, your text will be automatically converted to Devanagari on pressing spacebar.<br/>
+If you still face any difficulty, please visit<a href="http://www.google.com/intl/mr/inputtools/try/ "> http://www.google.com/intl/mr/inputtools/try/ </a>, 
+type your name and copy paste in the above text box.</b></p></td>
+</tr>
+<tr>
+<td>
+College Center No :</td><td><input type="number" name="number" style="border-radius:10px;"/></td></tr>
+<tr>
+<td colspan="2">
+<input type="submit" value="Search" style="border-radius:10px;"/></td>
+</tr>
+</table>
+</form>
+<h2>CLICK ON ABOVE IMAGE TO GO BACK TO UNIVERSITY SITE</h2>
+</body>
+</html>

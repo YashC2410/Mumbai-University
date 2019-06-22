@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html>
+</head>
+</head>
+<body>
+WELCOME to STUDENT RECORD <br/>
+PLEASE FILL THE REQUIRED FILED 
+<form method="go" action="#">
+Stuent Full Name :<input type="name" value="name"/>
+Select College Name: <select name="option">
+                      <option value="-1">Please Select Your College Name</option>
+					  <option value="0">Shree L.R Tiwari College</option>
+					  <option vallue
